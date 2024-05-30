@@ -53,6 +53,7 @@ export default {
                             userPhone: ''
                         }
                 }, 2500);
+                setTimeout(()=>{this.$emit('closeBuyWindow')}, 3500)
             } else {
                 this.emptyinput = true;
             }
@@ -62,7 +63,7 @@ export default {
 </script>
 <template>
     <div class="buy-window" :class="{ 'buy-window-active': buyActive }">
-        <button @click="closeBuyWindow" class="close-buy-window">&#10006;</button>
+        <button @click="closeBuyWindow" class="close-buy-window"></button>
         <p class="buy-form-title">Please fill the form</p>
         <form class="buy-form" action="#">
             <input @input="validateName" v-model="userForm.userName" :class="{ 'valid': validName, 'unvalid': unvalidName }"
@@ -132,7 +133,7 @@ export default {
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #4d4d4d;
+    color: #aaaaaa;
 }
 
 .close-buy-window {
@@ -147,6 +148,28 @@ export default {
     background-color: #fff;
     border-radius: 50%;
     transition: all 300ms ease;
+}
+
+.close-buy-window::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 3px;
+    rotate: 45deg;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+}
+
+.close-buy-window::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 3px;
+    rotate: -45deg;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
 }
 
 .close-buy-window:hover {

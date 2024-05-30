@@ -35,7 +35,7 @@ export default {
     <header>
         <div class="header-container" :class="[{ 'show-navigation': navActive }, hiddenClass]">
             <div class="logo-wrapper">
-                <a href="#">
+                <a href="https://www.apple.com/" target="_blank">
                     <Icon name="MainLogo" size="30px" />
                 </a>
             </div>

@@ -4,9 +4,9 @@
         <div class="footer" id="contacts">
             <div class="footer-container">
                 <div class="footer-first-side">
-                    <p>Find a retailer near you</p>
+                    <a class="footer-links" href="https://www.ctrs.com.ua/ru/brands/apple/" target="_blank">Find a retailer near you</a>
                     <p>Or call <a class="footer-links" href="tell: 800 207 758">800 207 758</a></p>
-                    <a href="#">
+                    <a href="https://www.apple.com/" target="_blank">
                         <Icon name="FooterLogo" size="30px" />
                     </a>
                 </div>
@@ -54,6 +54,9 @@
 
 .footer-links {
     color: #fff;
+}
+.footer-links:hover {
+    color: #aaaaaa;
 }
 
 .footer-second-side {
