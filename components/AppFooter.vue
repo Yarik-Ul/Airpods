@@ -13,9 +13,9 @@
                 <div class="footer-second-side">
                     <p>Copyright © 2023 Apple Inc.</p>
                     <p>All rights reserved.</p>
-                    <a class="footer-links" href="#">Legal Notices</a>
+                    <a class="footer-links" href="https://www.apple.com/legal/" target="_blank">Legal Notices</a>
                     <a class="footer-links" href="#">Site Map</a>
-                    <a class="footer-links" href="#">Privacy Policy</a>
+                    <a class="footer-links" href="https://www.apple.com/legal/privacy/" target="_blank">Privacy Policy</a>
                 </div>
             </div>
         </div>
