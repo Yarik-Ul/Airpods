@@ -7,10 +7,8 @@ export default defineNuxtConfig({
     [
       "@nuxtjs/google-fonts",
       {
-        googleFonts: {
-          families: {
-            Inter: true,
-          },
+        families: {
+          Inter: [400, 700],
         },
       },
     ],

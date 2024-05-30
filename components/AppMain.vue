@@ -1,7 +1,7 @@
 <script>
 export default {
     props: {
-        buttonClasses: {
+        filterBtnClasses: {
             type: Array,
             required: true
         },
@@ -46,7 +46,7 @@ export default {
                     </p>
                     <p class="choose-color-text">The ultimate personal audio experience.</p>
                     <div class="choose-colour-btns">
-                        <button @click="changeStyle(btnClass)" v-for="(btnClass, index) in buttonClasses" :key="index"
+                        <button @click="changeStyle(btnClass)" v-for="(btnClass, index) in  filterBtnClasses" :key="index"
                             :class="btnClass" class="choose-colour-btn">
                         </button>
                     </div>

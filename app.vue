@@ -15,7 +15,7 @@ export default {
     }
   },
   computed: {
-    buttonClasses() {
+    filterBtnClasses() {
       return this.buttonClasses.filter(btnClass => btnClass !== this.hiddenClass)
     }
   },
@@ -45,11 +45,11 @@ export default {
 <template>
   <div class="container" :class="hiddenClass">
     <AppHeader :hiddenClass="hiddenClass" :animateBtn="animateBtn" />
-    <AppMain @changeStyle="changeStyle" @toUpForBuy="toUpForBuy" :buttonClasses="buttonClasses" :hiddenClass="hiddenClass" :colors="colors" />
+    <AppMain @changeStyle="changeStyle" @toUpForBuy="toUpForBuy" :filterBtnClasses=" filterBtnClasses" :hiddenClass="hiddenClass" :colors="colors" />
     <AppFooter />
   </div>
 </template>
-<style scoped>
+<style>
 .container {
   width: 100%;
   height: 100vh;
